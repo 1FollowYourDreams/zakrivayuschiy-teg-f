@@ -9,4 +9,4 @@
 текст и заголовки адаптируем под разные разрешения.
 
 
-https://github.com/1FollowYourDreams/zakrivayuschiy-teg
+https://github.com/1FollowYourDreams/zakrivayuschiy-teg-f
