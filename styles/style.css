@@ -234,12 +234,22 @@ button {
   justify-content:center;
   align-items:center;
 }
+.button__icon {
+  fill: var(--button-color);
+  width: 21px;
+  height: 21px;
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: difference;
+  margin-right: 10px;
+}
+
 .save {
   display:flex;
   padding:16px 21px;
   gap:8px;
 }
-.button__text,.button__icon {
+.button__text {
   font-size:14px;
   mix-blend-mode:difference;
   line-height:90%;
