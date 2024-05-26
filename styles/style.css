@@ -252,7 +252,7 @@ button {
   inline-size:39px;
 }
 .dialog {
- 
+  color:var(--accent-color, #000000);
   padding: 30px;
   max-width: 357px;
   position: fixed;
@@ -292,7 +292,7 @@ button {
   flex-shrink:0;
   inline-size:39px;
   block-size:39px;
-  color:black
+  color:var(--accent-color, #000000);
 }
 .effect-one {
   filter:grayscale(70%);
