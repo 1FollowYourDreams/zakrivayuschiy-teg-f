@@ -217,10 +217,11 @@ button {
   padding:0;
   background-color:transparent;
   appearance:none;
+  outline:2px solid transparent;
+  transition-property:outline;
+  transition-duration:0.3s;
+  transition-timing-function:ease;
   cursor:pointer;
-  border: 2px solid transparent;
-  transition: border-color 0.3s ease;
-  
 }
 .card__icon-button:focus-visible {
   border-color:var(--accent-color);
@@ -233,14 +234,13 @@ button {
   justify-content:center;
   align-items:center;
 }
-
-
 .save {
   display:flex;
   padding:16px 21px;
   gap:8px;
 }
-.button__text, .button__icon {
+.button__text,.button__icon {
+  font-size:14px;
   mix-blend-mode:difference;
   line-height:90%;
   color:var(--button-color);
@@ -253,7 +253,7 @@ button {
   block-size:36px;
   inline-size:39px;
 }
-.dialog-save {
+.dialog {
   font-family:var(--accent-font,fantasy);
   font-size:14px;
   padding:30px 26px;
@@ -263,12 +263,7 @@ button {
   border:2px solid var(--accent-color);
 }
 
-.dialog-save::backdrop {
-  background-color: #000000;
-  opacity: 0.75;
-}
-
-.dialog-save[open] {
+.dialog[open] {
   display:flex;
   flex-direction:column;
   gap:30px;
@@ -327,7 +322,7 @@ button {
 .cards__item:nth-child(7) .card__text {
   padding-inline:27px;
 }
-.dialog-save {
+.dialog {
   padding:32px 42px;
 }
 .dialog__content {
