@@ -219,7 +219,7 @@ button {
   background-color:transparent;
   appearance:none;
   border: 2px solid transparent;
-  transition: border-color 0.3s ease;
+  transition: border 0.3s ease;
   cursor:pointer;
 }
 .card__icon-button:focus {
@@ -228,7 +228,6 @@ button {
 
 .card__icon-button:focus-visible {
   border: 2px solid var(--accent-color, #000000);
-  color: var(--accent-color, #000000);
 }
 .card__like-button {
   padding:0 36px;
