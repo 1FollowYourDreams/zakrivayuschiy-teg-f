@@ -19,7 +19,7 @@
   font-family: var(--inter,sans-serif);
   min-inline-size:320px;
   min-block-size:100dvb;
-  background-color:var(--background-color);
+  background-color:var(--background-color, #FFFFFF);
   background-image:var(--background-image);
   background-attachment:fixed;
   background-size:cover;
@@ -30,7 +30,7 @@
   flex-direction:column;
   justify-content:center;
   border:2px solid var(--accent-color, #000000);
-  background-color:var(--background-color);
+  background-color:var(--background-color, #FFFFFF);
   align-items:center;
   font-variation-settings: var(--font-weight-text, 400);
   font-family: var(--accent-font, fantasy);
@@ -126,7 +126,7 @@
 
 button {
   position:relative;
-  background:var(--background-color);
+  background:var(--background-color, #FFFFFF);
   border:2px solid var(--accent-color, #000000);
   font-family:var(--accent-font,fantasy);
   font-size:14px;
@@ -151,7 +151,7 @@ button {
 }
 
 .cards__item {
-  background-color:var(--background-color);
+  background-color:var(--background-color, #FFFFFF);
   border:2px solid var(--accent-color, #000000);
 }
 
@@ -183,7 +183,7 @@ button {
   mix-blend-mode:hard-light;
   opacity:0.5;
   font-variation-settings:var(--font-weight-text, 400);
-  text-shadow:-1px 0 var(--background-color),0 1px var(--background-color),1px 0 var(--background-color),0 -1px var(--background-color);
+  text-shadow:-1px 0 var(--background-color, #FFFFFF),0 1px var(--background-color, #FFFFFF),1px 0 var(--background-color, #FFFFFF),0 -1px var(--background-color, #FFFFFF);
 }
 
 .cards__paragraph {
@@ -284,7 +284,7 @@ button {
   max-width: 357px;
   position: fixed;
   inset: 0;
-  background-color:var(--background-color);
+  background-color:var(--background-color, #FFFFFF);
   border:2px solid var(--accent-color, #000000);
 }
 
@@ -394,10 +394,10 @@ button {
   }
 }
 
-@supports ((-webkit-text-stroke: 1px var(--background-color)) or (text-stroke: 1px var(--background-color))) {
-  .card__watermark {
+@supports ((text-stroke: 1px var(--background-color, #FFFFFF)) or (webkit-text-stroke: 1px var(--background-color, #FFFFFF))) {
+  .cards__watermark {
     text-shadow: none;
-    -webkit-text-stroke: 1px var(--background-color);
-    text-stroke: 1px var(--background-color);
+    -webkit-text-stroke: 1px var(--background-color, #FFFFFF);
+    text-stroke: 1px var(--background-color, #FFFFFF);
   }
 }
